@@ -6,7 +6,7 @@
 
 body{
     font-family: arial, helvetica, sans-serif;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     padding: 0px;
     overflow-x: hidden;
@@ -14,10 +14,10 @@ body{
 }
 
 h1{
-    font-size: 66pt;
+    font-size: 60pt;
     font-weight: 900;
     font-family: 'Rubik Mono One', sans-serif;
-    color:aliceblue;
+    color:#F3F3F3;
     letter-spacing: 3px;
     margin-left: 1rem;
 }
@@ -25,7 +25,7 @@ h1{
 h2{
     font-size: 40pt;
     font-weight: 500;
-    color:aliceblue;
+    color:#F3F3F3;
     letter-spacing: 1px;
     font-family: 'Rubik Mono One', sans-serif;
     padding-bottom: 4rem;
@@ -34,19 +34,27 @@ h2{
 h3{
     font-size: 16pt;
     font-family: 'Rubik Mono One', sans-serif;
-    color:aliceblue;
+    color:#F3F3F3;
     font-weight: normal;
 }
 
 p{
     font-size: 14pt;
-    color:rgb(133, 141, 147);
+    color: #F3F3F3;
+}
+
+a{
+    cursor: pointer;
+
+}
+
+button:hover{
+    color: #280E36;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(133, 141, 147, 0.101);
-    border-radius: 10px;
-    
+    background-color: #12001C;
+    border-radius: 10px;    
 }
 
 ::-webkit-scrollbar-track {
@@ -54,29 +62,39 @@ p{
   }
 
 ::-webkit-scrollbar{
-    background-color: #080420;
+    background-color: #f3fbfb;
+    max-width: 8px;
 }
 
-.container_menu{
+#header{
+    display: flex;
+    width: 100%;
+    background-color: #12001C;
     position: fixed;
+    box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
     height: 3rem;
-    z-index: 1030;
-    background-color: #080418;
     flex-wrap: wrap;
     gap: 30px;
-    left: -30px;
+    margin: 0px;
 }
 
+.container_menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0px;
+}
 
 .container_menu li{
     text-decoration: none;
     list-style: none;
     font-size: 12pt;
     letter-spacing: 6px;
+    justify-content: space-between;
 }
 
 .container_menu li a{
@@ -84,58 +102,220 @@ p{
     color: rgb(133, 141, 147);
 }
 
+.container_menu li a:hover{
+    color: #280E36;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width: 700px){
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color:#280E36
+    }
+    .container_menu{
+        display: block;
+        position: absolute;
+        justify-content: center;
+        width: 100%;
+        top: 3rem;
+        right: 0px;
+        background-color: #12001C;
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    #nav.active .container_menu{
+        height:  calc(100vh - 3rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .container_menu a{
+        padding: 0rem 1rem;
+        margin: 1rem 1rem;
+        font-size: 18pt;
+        border-bottom: 2px solid #280E36;
+    }
+    #hamburger{
+        border-top: 2px solid;
+        width: 20px;
+        color: #f3fbfb;
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background-color: currentColor;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburger{
+        border-top-color:transparent;
+    }
+
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    h1{
+        font-size: 24pt;
+    }
+
+    h2{
+        font-size: 14pt;
+        padding: 1rem;
+
+    }
+
+    h3{
+        font-size: 12pt;
+    }
+
+    p{
+        font-size: 10pt;
+    }
+
+    .container_home{
+        max-width: 100%;
+        align-items: center;
+        padding: 5rem 0rem 1rem 0rem;
+    }
+
+    .home{
+        max-width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+
+    .container_icons{
+        justify-content: center;
+    }
+
+    .container_img img{
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 0px 10%;
+    }
+
+    .container_sobre{
+        flex-direction: column;
+    }
+
+    .container_info{
+        width: 70%;
+    }
+
+    .projetos{
+        width: 150px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 700px){
+
+    .container_home{
+        padding: 15rem 5rem 2.5rem 5rem;
+        text-align: left;
+    }
+
+    .home h2{
+        font-size: 24pt;
+        padding-bottom: 0rem;
+    }
+
+    .container_img img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 0px 10%;
+    }
+
+    .container_sobre{
+        flex-direction: row;
+    }
+
+    .container_info{
+        width: 40%;
+    }
+
+    .projetos{
+        width: 350px;
+        height: 200px;
+    }
+}
+
 .container_icons{
     height: 20px;
-    width: 100%;
+    max-width: 100%;
     display: flex;
-    position: relative;
+    gap: 20px;
     margin-left: 2rem;
 }
 
 
 .bi{
     margin-right: 5px;
+    color: white;
 }
 
 .icons{
-    width: 140px;
-    height: 10px;
-    padding-top: 2rem;
-    float: left;
+    max-width: 120px;
+    height: 50px;
+    background-color: #440069;
+    border-radius: 14px;
     text-decoration: none;
     color: rgb(100, 36, 160);
+    padding: 8px;
 }
 
 
 .container_home{
-    width: 100%;
+    max-width: 100%;
     height: 400px;
     display: flex;
     flex-direction: column;
-    background-color: #080418;
-    padding: 15rem 5rem 2.5rem 5rem;
-}
+    background-color: #12001C;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0px;
 
-.resumo{
-    padding-top: 2rem;
-}
-
-.home h2{
-    font-size: 24pt;
-    padding-bottom: 0rem;
 }
 
 .container_sobre{
-    width: 100%;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    align-content: space-around;
-    background-color: #080420;
-    justify-content: space-around;
-    padding: 5rem 5rem 5rem 5rem;
-    flex-wrap: wrap;
-
+    max-width: 100%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        align-content: space-around;
+        background-color: #280E36;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
 }
 
 .container_sobre h2{
@@ -147,7 +327,6 @@ p{
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 40%;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -157,61 +336,51 @@ p{
 }
 
 .container_img{
-    width: 40%;
+    width: 30%;
 }
 
-.container_img img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 0px 10%;
 
-}
 
 .container_portifolio{
-    background-color: #080418;
+    background-color: #12001C;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: center;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
     height: 600px;
 }
 
 .container_projetos{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    
 }
 
 .projetos{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     text-align: start;
     align-items: center;
-    background-color: #080420;
-    width: 350px;
-    height: 200px;
-}
-
-
-.dentro-projeto h2{
-    font-size: 22pt
+    background-color: #280E36;
+    border-radius: 10px;
+    padding: 15px;
 }
 
 .container_contato{
-    background-color: #080420;
+    background-color: #280E36;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    
 }
 
 .container_contato h2{
@@ -224,6 +393,8 @@ p{
     justify-content: center;
     text-align: center;
     align-items: center;
+    flex-wrap: nowrap;
+    row-gap: 20px;
 }
 
 .icons_contato{
