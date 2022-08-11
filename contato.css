@@ -1,0 +1,32 @@
+.container_contato{
+    background-color: #280E36;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.conteudo_contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    row-gap: 20px;
+}
+
+.container_contato h2{
+    font-size: 28pt;
+}
+
+
+
+.icons_contato{
+    display: flex;
+    height: 20px;
+    padding-top: 0px;
+}
