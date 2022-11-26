@@ -1,0 +1,5 @@
+.time img, .revisao img{
+    size-adjust: 3rem;
+    max-width: 8rem;
+    border-radius: 5rem;
+}

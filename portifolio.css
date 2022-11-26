@@ -1,11 +1,12 @@
 .container_portifolio{
-    background-color: #12001C;
+    background-color: #280E36;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     max-width: 100%;
     height: 600px;
+    
 }
 
 .container_projetos{
@@ -14,6 +15,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    padding: 2rem 0rem 1rem 0rem;
     
 }
 
@@ -24,9 +26,15 @@
     flex-wrap: wrap;
     text-align: start;
     align-items: center;
-    background-color: #280E36;
+    background-color: #12001C;
     border-radius: 10px;
     padding: 15px;
+}
+
+.projeto1{
+    background-image: url("https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=740&t=st=1669495458~exp=1669496058~hmac=9ed76ff4e1446de035fe49814e67c104d4df85f7ef0003869ba4225450ee330a");
+    image-rendering: auto;
+    background-size: inherit;
 }
 
 @media (min-width: 700px){
@@ -40,7 +48,7 @@
 @media (max-width: 700px){
     
     .projetos{
-        width: 150px;
-        height: 100px;
+        width: 8rem;
+        height: 8rem;
     }
 }
