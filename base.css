@@ -29,6 +29,7 @@ h2{
     letter-spacing: 1px;
     font-family: 'Rubik Mono One', sans-serif;
     padding-bottom: 4rem;
+    text-decoration: none;
 }
 
 h3{
@@ -45,6 +46,7 @@ p{
 
 a{
     cursor: pointer;
+    text-decoration: none;
 
 }
 

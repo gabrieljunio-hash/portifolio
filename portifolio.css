@@ -5,7 +5,7 @@
     justify-content: center;
     text-align: center;
     max-width: 100%;
-    height: 600px;
+    height: 45rem;
     
 }
 
@@ -16,7 +16,6 @@
     justify-content: center;
     gap: 20px;
     padding: 2rem 0rem 1rem 0rem;
-    
 }
 
 .projetos{
@@ -29,19 +28,78 @@
     background-color: #12001C;
     border-radius: 10px;
     padding: 15px;
+    
 }
 
-.projeto1{
-    background-image: url("https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=740&t=st=1669495458~exp=1669496058~hmac=9ed76ff4e1446de035fe49814e67c104d4df85f7ef0003869ba4225450ee330a");
-    image-rendering: auto;
-    background-size: inherit;
+.container-overlay{
+    position: relative;
+    width: 100%;
 }
 
-@media (min-width: 700px){
+.capa-restaurante{
+    display: block;
+    width: 100%;
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000d0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+
+.container-overlay:hover .overlay {
+width: 100%;
+}
+  
+.text-restaurant { 
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    word-break: normal;
+}
+
+.projeto_fundo{
+    background-color: #12001C;
+    border-radius: 1rem;
+    padding: 1rem;
+    word-break: break-all;
+}
+
+.projetos h3{
+    font-size: 22pt;
+    font-weight: 800;
+    padding-top: 2rem;
+}
+
+.img_vazia{
+    width:350px;
+    height: 190px;
+    background-color: #060008ba;
+    display: flex;
+    border-radius: 1rem;
+}
+
+ @media (min-width: 700px){
 
     .projetos{
-        width: 350px;
-        height: 200px;
+        width: 23rem;
+        height: 25rem;
+        
     }
 }
 
@@ -51,4 +109,4 @@
         width: 8rem;
         height: 8rem;
     }
-}
+} 
