@@ -4,7 +4,26 @@
     border-radius: 5rem;
 }
 
-.fundo_1{
-    background-color: antiquewhite;
+.mybackground{
+    background-image: url(imagens/fundositerestaurante.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -10rem;
 }
 
+
+
+.img_pratos{
+    max-width: 250px;
+    
+}
+
+@media (max-width: 700px){
+    .img_pratos{
+        max-width: 180px;
+    }
+    .mybackground{
+        background-size: 180%;
+        background-position-y: -4rem;
+    }
+}

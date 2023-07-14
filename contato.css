@@ -1,12 +1,7 @@
 .container_contato{
     background-color: #280E36;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    
+    padding: 4rem 4rem 6em 4rem;
+    text-align: center;  
 }
 
 .conteudo_contato{

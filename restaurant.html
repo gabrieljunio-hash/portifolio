@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="restaurant.css">
     <title>Delicias Da Nossa Cantina</title>
 </head>
-<body class="w-auto">
+<body class="w-auto bg-warning" style="--bs-bg-opacity: .3;">
 
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #b0b2b041;">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #b0b2b0e6;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,37 +23,27 @@
                 <a class="nav-link active" aria-current="page" href="#">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SOBRE</a>
+                <a class="nav-link " href="#SOBRE">SOBRE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SERVIÇOS</a>
+                <a class="nav-link" href="#reserva">RESERVA</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">RESERVA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">OPNIÕES</a>
+                <a class="nav-link" href="#opnioes">OPNIÕES</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+    
+      <div class="mybackground">
 
-    <div class="container-fluid w-auto fundo_1" style="height: 50rem; padding-top: 8rem;" >
-       <div class="container-fluid">
-        <img src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=740&t=st=1669495458~exp=1669496058~hmac=9ed76ff4e1446de035fe49814e67c104d4df85f7ef0003869ba4225450ee330a" 
-        class="img-fluid" alt="" style="height: 8rem; border-radius: 1rem; margin: 1rem;" >
-    </div>
+    <div class="container-fluid w-auto " >
+       <div class="container-fluid text-center align-items-center d-flex justify-content-center mx-auto" style="height: 30rem;">
+        <h1>Delicias de Nossa Cantina</h1>
+       </div>
 
-        <h1>Delicias Da Nossa Cantina</h1>
-        <div class="container-fluid">
-            <img src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=740&t=st=1669495458~exp=1669496058~hmac=9ed76ff4e1446de035fe49814e67c104d4df85f7ef0003869ba4225450ee330a" 
-            class="img-fluid float-sm-end" alt="" style="height: 8rem; border-radius: 1rem; margin: 1rem;" >
-        </div>
-
-        </div>
-
-    <div class="container-fluid" style="height: 30rem;">
+    <div class="container-fluid " id="SOBRE" style="height: 30rem; padding-top: 6rem; background-color: aliceblue;">
         <h1>Sobre Nós</h1>
         <p>A única coisa que levamos a sério é a comida.</p>
         <p>Fusce quam praesent enim enim. Arcu ornare mecenas mauris tellus ut mollis. Laoreet enim amet donec nulla risus erat sed. Scelerisque ac cum nulla massa ultricies etiam augue justo, amet. Fermentum ac viverra tincidunt neque, tristique duis nunc lacus quam. Pharetra, em Pharetra</p>
@@ -62,90 +52,82 @@
     </div>
 
     
-    <div class="container-fluid row align-items-center d-flex justify-content-center mx-auto fundo_1" style="height: 30rem; margin: 0; padding: 0;">
-        <div class="col-3 align-items-center text-center">
+    <div class="container-fluid row align-items-center d-flex justify-content-center mx-auto fundo_1" style="height: 30rem; margin: 0; padding: 0; color: aliceblue; text-decoration:double;">
+        <div class="col align-items-center text-center">
             <img src="https://cdn-icons-png.flaticon.com/512/2812/2812318.png" 
             class="img-thumbnail" style="height: 7rem; border-radius: 5rem; background-color: #FF4500;" alt="">
           COMIDA DE QUALIDADE
         </div>
-        <div class="col-3 align-itens-center text-center">
+        <div class="col align-itens-center text-center">
             <img src="https://cdn-icons-png.flaticon.com/512/562/562678.png"
-            class="img-thumbnail" style="height: 7rem; border-radius: 4rem; background-color: #8B008B; padding: 1rem;" alt="">
+            class="img-thumbnail" style="height: 7rem; border-radius: 4rem; background-color: #FF4500;" alt="">
           FOCO NO SABOR
         </div>
-        <div class="col-3 align-items-center text-center">
+        <div class="col align-items-center text-center">
             <img src="https://cdn-icons-png.flaticon.com/512/5637/5637217.png"
-            class="img-thumbnail" style="height: 7rem; border-radius: 4rem; background-color: #32CD32;" alt="">
+            class="img-thumbnail" style="height: 7rem; border-radius: 4rem; background-color: #FF4500;" alt="">
           ENTREGA RÁPIDA
         </div>
       </div>
 
+      </div>
     
-    <div class="container-fluid row align-items-center d-flex justify-content-center mx-auto" style="height: 50rem; margin: 0; padding: 0;">
+    <div class="container-fluid row align-items-center d-flex justify-content-center mx-auto" style="height: 40rem; margin: 0; padding: 0; background-color: aliceblue;">
         <h1 class="text-center">Pratos Populares</h1>
-        <p>
-        </p>
-                <div class="col-4 align-items-center text-center" style="margin: 0; padding: 0;">
-                    <img src="" alt="">
-                        <h3>
+                <div class=" col align-items-center text-center" style="margin: 0; padding: 0;">
+                    <img class="img_pratos" src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg" alt="">
+                    <h3 style="font-size: medium;">
                             HAMBURGUER GUHRME
                         </h3>
                         <p>20 - 25 minutos</p>
                     </div>
-                <div class="col-4 align-items-center text-center" style="margin: 0; padding: 0;">
-                    <img src="" alt="">
-                    <h3>
+                <div class=" col align-items-center text-center" style="margin: 0; padding: 0;">
+                    <img class="img_pratos "src="https://cdn.pixabay.com/photo/2016/03/17/23/26/italy-1264104_1280.jpg" alt="">
+                    <h3 style="font-size: medium;">
                         ALCATRA DE CORDEIRO ASSADA
                     </h3>
                     <p>45 - 50 minutos</p>
                 </div>
-                <div class="col-4 align-items-center text-center" style="margin: 0; padding: 0;">
-                    <img src="" alt="">
-                    <h3>
+                <div class=" col align-items-center text-center" style="margin: 0; padding: 0;">
+                    <img class="img_pratos" src="https://cdn.pixabay.com/photo/2016/03/05/23/02/barbecue-1239434_1280.jpg" alt="">
+                    <h3 style="font-size: medium;">
                         ROBALO GRELHADO NA FRIGIDEIRA
                     </h3>
                     <p>35 - 40 minutos</p>
                 </div>
-                <div class="col-4 align-items-center text-center" style="margin: 0; padding: 0;">
-                    <img src="" alt="">
-                    <h3>
-                        SALMÃO CURADO COM FRUTAS CÍTRICAS
-                    </h3>
-                    <p>10 - 22 minutos</p>
-                </div>
             </div>
             
-    <div class="container-fluid row align-items-center d-flex justify-content-center mx-auto fundo_1" style="height: 30rem; margin: 0; padding: 0;">
+    <div class="container-fluid row align-items-center d-flex justify-content-center mx-auto" style="height: 40rem; margin: 0; padding: 5rem 0 0 0;">
                 <h1 class="text-center">
                     Nosso Time
                 </h1>
-                <div class="col-2 align-items-center text-center" style="height: 15rem; margin: 1rem; padding: 0;">
+                <div class="col align-items-center text-center mx-auto " style="height: 15rem; margin: 0rem; padding: 0;">
                     <img src="https://img.freepik.com/psd-gratuitas/renderizacao-3d-de-mulher-acenando_23-2149294135.jpg?w=740&t=st=1669495771~exp=1669496371~hmac=25f2aaa3856ac60b657f9dd305068869096167afe787447e36d8c579e184a61a" 
-                    class="img-thumbnail" style="height: 7rem;" alt="">
+                    class="img-thumbnail" style="height: 120px;width: 120px; border-radius: 4rem;" alt="">
                         <h3>
                             Rodrigo Pereira
                         </h3>
                         <p>chefe principal</p>
                 </div>
-                <div class="col-2 align-items-center text-center" style="height: 15rem; margin: 1rem; padding: 0;">
+                <div class="col align-items-center text-center  justify-content-center mx-auto" style="height: 15rem; margin: 1rem; padding: 0;">
                     <img src="https://img.freepik.com/psd-gratuitas/renderizacao-3d-de-mulher-acenando_23-2149294135.jpg?w=740&t=st=1669495771~exp=1669496371~hmac=25f2aaa3856ac60b657f9dd305068869096167afe787447e36d8c579e184a61a" 
-                    class="img-thumbnail" style="height: 7rem;" alt="">
+                    class="img-thumbnail" style="height: 120px;width: 120px; border-radius: 4rem;" alt="">
                     <h3>
                         Luiz Silva
                     </h3>
                     <p>sub-chefe</p>
                 </div>
-                <div class="col-2 align-items-center text-center" style="height: 15rem; margin: 1rem; padding: 0;">
+                <div class="col align-items-center text-center  justify-content-center mx-auto" style="height: 15rem; margin: 1rem; padding: 0;">
                     <img src="https://img.freepik.com/psd-gratuitas/renderizacao-3d-de-mulher-acenando_23-2149294135.jpg?w=740&t=st=1669495771~exp=1669496371~hmac=25f2aaa3856ac60b657f9dd305068869096167afe787447e36d8c579e184a61a" 
-                    class="img-thumbnail" style="height: 7rem;" alt="">
+                    class="img-thumbnail" style="height: 120px;width: 120px; border-radius: 4rem;" alt="">
                     <h3>
                         Bruno Augusto
                     </h3>
                     <p>cozinheiro de linha</p>
                 </div>
-                <div class="col-2 align-items-center text-center" style="height: 15rem; margin: 1rem; padding: 0;">
+                <div class="col align-items-center text-center  justify-content-center mx-auto" style="height: 15rem; margin: 1rem; padding: 0;">
                     <img src="https://img.freepik.com/psd-gratuitas/renderizacao-3d-de-mulher-acenando_23-2149294135.jpg?w=740&t=st=1669495771~exp=1669496371~hmac=25f2aaa3856ac60b657f9dd305068869096167afe787447e36d8c579e184a61a" 
-                    class="img-thumbnail" style="height: 7rem;" alt="">
+                    class="img-thumbnail" style="height: 120px; width:120px; border-radius: 4rem;" alt="">
                     <h3>
                         Johnathan Tyler
                     </h3>
@@ -153,11 +135,11 @@
                 </div>
     </div>
 
-    <div class="container-fluid">
+    <div id="reserva" class="container-fluid" style="background-color: aliceblue;">
         <h1>
             Fazer uma reserva
         </h1>
-        <p>Para Mais Duvidas,Ligue:19-9999-9999</p>
+        <p>Para Mais Duvidas, Ligue:19-9999-9999</p>
 
         <div class="mb-3">
           <label for="exampleInputNome" class="form-label">Nome completo.</label>
@@ -179,13 +161,13 @@
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-outline-dark">Enviar</button>
     </div>
 
-    <div class="container_fluid fundo_1 align-items-center d-flex justify-content-center" style="height: 30rem;">
+    <div id="opnioes" class="container_fluid fundo_1 align-items-center d-flex justify-content-center" style="height: 30rem;">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div class="carousel-inner bg-light">
+          <div class="carousel-item active bg-light">
             <img src="https://img.freepik.com/psd-gratuitas/renderizacao-3d-de-mulher-acenando_23-2149294135.jpg?w=740&t=st=1669495771~exp=1669496371~hmac=25f2aaa3856ac60b657f9dd305068869096167afe787447e36d8c579e184a61a" 
             class="img-thumbnail" style="height: 7rem;" alt="">
             <p>
@@ -193,7 +175,7 @@
             </p>
             <p>Joaquin Pereira</p>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item bg-light">
             <img src="https://img.freepik.com/psd-gratuitas/renderizacao-3d-de-mulher-acenando_23-2149294135.jpg?w=740&t=st=1669495771~exp=1669496371~hmac=25f2aaa3856ac60b657f9dd305068869096167afe787447e36d8c579e184a61a" 
             class="img-thumbnail" style="height: 7rem;" alt="">
                 <p>
@@ -202,7 +184,7 @@
                 <p>Pedro Henrique</p>
             </img>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item bg-light">
             <img src="https://img.freepik.com/psd-gratuitas/renderizacao-3d-de-mulher-acenando_23-2149294135.jpg?w=740&t=st=1669495771~exp=1669496371~hmac=25f2aaa3856ac60b657f9dd305068869096167afe787447e36d8c579e184a61a" 
             class="img-thumbnail" style="height: 7rem;" alt="">
             <p>
@@ -210,7 +192,7 @@
             </p>
             <p>Ana Clara</p>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item bg-light">
             <img src="https://img.freepik.com/psd-gratuitas/renderizacao-3d-de-mulher-acenando_23-2149294135.jpg?w=740&t=st=1669495771~exp=1669496371~hmac=25f2aaa3856ac60b657f9dd305068869096167afe787447e36d8c579e184a61a" 
             class="img-thumbnail" style="height: 7rem;" alt="">
             <p>
@@ -218,7 +200,7 @@
             </p>
             <p>João Lopes</p>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item bg-light">
             <img src="https://img.freepik.com/psd-gratuitas/renderizacao-3d-de-mulher-acenando_23-2149294135.jpg?w=740&t=st=1669495771~exp=1669496371~hmac=25f2aaa3856ac60b657f9dd305068869096167afe787447e36d8c579e184a61a" 
             class="img-thumbnail" style="height: 7rem;" alt="">
                 <p>
